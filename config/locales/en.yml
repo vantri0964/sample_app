@@ -96,10 +96,20 @@ en:
       delete: "User deleted!"
       delete_bug: "delete bug!"
       update_success: "Update successfully!"
+      user_mail: "Acount %{name} created date: %{date}. Please check your email
+                  to activate your account."
     session:
       email_pass_bug: "Email/password bug!"
       update_success: "Update successfully!"
       please_log_in: "Please log in!"
+      delete: "User deleted!"
+      Account_not_activated: "Account not activated
+                              .Check your email for the activation link."
+    account_activation:
+      confirm_success: "Account activated!"
+      confirm_danger: "Invalid activation link"
+    password_reset:
+      not_found: "email not found"
   sessions:
     new:
       title: "Log in"
@@ -108,3 +118,10 @@ en:
       email: "Email"
       password: "Password"
       rememberme: "Remember me on this computer"
+  user_mailer:
+    account_activation:
+      title: "Sample App"
+      hi: "Hi"
+      welcom_to: "Welcome to the Sample App! Click on the link
+                  below to activate your account:"
+      Activate: "Activate"

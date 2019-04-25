@@ -18,12 +18,17 @@ class SessionsController < ApplicationController
 
   private
   def check_sucess user
-    log_in user
-    if params[:session][:remember_me] == Settings.app.session.one
-      remember user
+    if user.activated?
+      log_in user
+      if params[:session][:remember_me] == Settings.app.session.one
+        remember user
+      else
+        forget user
+      end
+      redirect_back_or user
     else
-      forget user
+      flash[:warning] = t ".controllers.session.Account_not_activated"
+      redirect_to root_path
     end
-    redirect_to user
   end
 end

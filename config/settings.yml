@@ -7,4 +7,8 @@ app:
     page: 10
   session:
     one: 1
+config:
+  development:
+    port: "587"
+    host: "localhost:3000"
 
