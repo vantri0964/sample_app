@@ -7,39 +7,40 @@ $eaeaea: #eaeaea;
 $gray: #555;
 $black-1: #222;
 $bbb: #bbb;
+$e8e8e8: #e8e8e8;
 
-body {
+body{
   padding-top: 60px;
 }
 
-section {
+section{
   overflow: auto;
 }
 
-textarea {
+textarea{
   resize: vertical;
 }
 
-.center {
+.center{
   text-align: center;
 }
 
-.center h1 {
+.center h1{
   margin-bottom: 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6{
   line-height: 1;
 }
 
-h1 {
+h1{
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
 }
 
-h2 {
+h2{
   font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
@@ -48,12 +49,12 @@ h2 {
   color: $light-gray;
 }
 
-p {
+p{
   font-size: 1.1em;
   line-height: 1.7em;
 }
 
-#logo {
+#logo{
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
@@ -64,7 +65,7 @@ p {
   font-weight: bold;
 }
 
-#logo:hover {
+#logo:hover{
   color: $white;
   text-decoration: none;
 }
@@ -77,24 +78,24 @@ footer {
   color: $light-gray;
 }
 
-footer a {
+footer a{
   color: $gray;
 }
 
-footer a:hover {
+footer a:hover{
   color: $black-1;
 }
 
-footer small {
+footer small{
   float: left;
 }
 
-footer ul {
+footer ul{
   float: right;
   list-style: none;
 }
 
-footer ul li {
+footer ul li{
   float: left;
   margin-left: 15px;
 }
@@ -140,12 +141,12 @@ aside {
   }
 }
 
-.gravatar {
+.gravatar{
   float: left;
   margin-right: 10px;
 }
 
-.gravatar_edit {
+.gravatar_edit{
   margin-top: 15px;
 }
 
@@ -157,12 +158,12 @@ input, textarea, select, .uneditable-input {
   @include box_sizing;
 }
 
-input {
+input{
   height: auto !important;
 }
 
 /* errors */
-#error_explanation {
+#error_explanation{
   color: red;
   ul {
     color: red;
@@ -170,7 +171,7 @@ input {
   }
 }
 
-.field_with_errors {
+.field_with_errors{
   @extend .has-error;
   .form-control {
     color: $state-danger-text;
@@ -201,4 +202,55 @@ input {
     padding: 10px 0;
     border-bottom: 1px solid $light-gray;
   }
+}
+
+/* microposts */
+.microposts {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid $e8e8e8;
+  }
+.user{
+    margin-top: 5em;
+    padding-top: 0;
+  }
+.content{
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+}
+.timestamp{
+  color: $light-gray;
+  display: block;
+  margin-left: 60px;
+}
+.gravatar{
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  }
+}
+
+aside{
+  textarea {
+  height: 100px;
+  margin-bottom: 5px;
+  }
+}
+
+span.picture{
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+
+.image_micro{
+  width: 300px;
+  height: 200px;
 }

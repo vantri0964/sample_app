@@ -17,6 +17,7 @@ class SessionsController < ApplicationController
   end
 
   private
+
   def check_sucess user
     if user.activated?
       log_in user
@@ -27,7 +28,7 @@ class SessionsController < ApplicationController
       end
       redirect_back_or user
     else
-      flash[:warning] = t ".controllers.session.Account_not_activated"
+      flash[:warning] = t "controllers.session.account_not_activated"
       redirect_to root_path
     end
   end

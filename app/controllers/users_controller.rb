@@ -9,10 +9,17 @@ class UsersController < ApplicationController
   end
 
   def index
-    @user = User.paginate page: params[:page], per_page: Settings.app.user.page
+    @user = User
+            .user_activated
+            .paginate page: params[:page], per_page: Settings.app.user.page
   end
 
-  def show; end
+  def show
+    @microposts = @user
+                  .microposts
+                  .paginate page: params[:page],
+                  per_page: Settings.app.user.page
+  end
 
   def create
     @user = User.new user_params
@@ -47,16 +54,10 @@ class UsersController < ApplicationController
   end
 
   private
+
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t "controllers.user.please_log_in"
-    redirect_to login_url
   end
 
   def load_user
