@@ -1,0 +1,8 @@
+<li>
+  <%= gravatar_for user, Settings.app.user.size_gravatar %>
+  <%= link_to user.name, user %>
+  <% if current_user.admin? && !current_user?(user) %>
+    <%= t ".vertical" %>
+    <%= link_to t(".delete"), user, method: :delete, data: {cofirm: t(".cf")} %>
+  <% end %>
+</li>

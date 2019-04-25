@@ -19,7 +19,11 @@ class SessionsController < ApplicationController
   private
   def check_sucess user
     log_in user
-    params[:session][:remember_me] == t("controllers.session.remember_1") ? remember(user) : forget(user)
+    if params[:session][:remember_me] == Settings.app.session.one
+      remember user
+    else
+      forget user
+    end
     redirect_to user
   end
 end
