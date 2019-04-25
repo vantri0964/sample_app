@@ -55,3 +55,14 @@ en:
     new:
       title: "Sign up"
       content: "Trang tạo tài khoản mới"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Confirmation"
+  shared:
+    one: "The form contains 1 error"
+    other: "The form contains %{count} errors"
+  controllers:
+    user:
+      welcom: "Welcome %{name} to the Sample App!"
+      id_not_find: "Id not find!"
