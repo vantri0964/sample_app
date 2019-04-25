@@ -5,9 +5,16 @@ en:
   static_pages:
     home:
       title : "HOME"
-      content : "Trang giao dien Home truy cap tai:"
-      link_content : "Thong Tin Home"
-      link : "https://www.railstutorial.org/"
+      title_h1 : "Welcome to the Sample App"
+      content_h2_1: "This is the home page for the"
+      link_railstutorial: "https://www.railstutorial.org/"
+      link_railsturorial_content: "Ruby on Rails Tutorial"
+      content_h2_2: "sample application."
+      link_sign_up : "#"
+      link_sign_up_content: "Sign up now!"
+      link_img: "rails.png"
+      link_img_alt: "Rails logo"
+      link_img_content: "http://rubyonrails.org/"
     help:
       title: "HELP"
       content: "Trang giao dien Help truy cap tai:"
@@ -18,7 +25,33 @@ en:
       content: "Trang giao dien About truy cap tai:"
       link_content: "Thong Tin About"
       link: "https://www.railstutorial.org/"
+    contact:
+      title: "Contact"
+      content: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      link_contact: "https://www.railstutorial.org/contact"
+      link_contact_content: "contact page"
   layouts:
     application:
       title: "ruby on rails tutorial"
-      hello: "Hello world"
+    header:
+      link_sample_app: "sample app"
+      link_home: "Home"
+      link_help: "Help"
+      link_log_in: "Log in"
+    footer:
+      small_content_1: "The"
+      small_link_1: "https://www.railstutorial.org/"
+      small_link_content_1: "Ryby on Rails Tutorial"
+      small_content_2: "by"
+      small_link_2: "http://news.railstutorial.org/"
+      small_link_content_2: "Michael Hartl"
+      link_about_content: "About"
+      link_contact_content: "Contact"
+      link_new_content: "News"
+      link_about: "#"
+      link_contact: "#"
+      link_new: "http://news.railstutorial.org/"
+  users:
+    new:
+      title: "Sign up"
+      content: "Trang tạo tài khoản mới"
