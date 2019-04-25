@@ -30,4 +30,23 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  static_pages:
+    home:
+      title : "HOME"
+      content : "Trang giao dien Home truy cap tai:"
+      link_content : "Thong Tin Home"
+      link : "https://www.railstutorial.org/"
+    help:
+      title: "HELP"
+      content: "Trang giao dien Help truy cap tai:"
+      link_content: "Thong Tin Help"
+      link: "https://www.railstutorial.org/"
+    about:
+      title: "ABOUT"
+      content: "Trang giao dien About truy cap tai:"
+      link_content: "Thong Tin About"
+      link: "https://www.railstutorial.org/"
+  layouts:
+    application:
+      title: "ruby on rails tutorial"
+      hello: "Hello world"
