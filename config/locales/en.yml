@@ -87,6 +87,13 @@ en:
       vertical: "|"
     show:
       micropost: "Microposts"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfllow"
+    show_follow:
+      view_profile: "View my profile"
+      micropost: "Micropost"
   shared:
     one: "The form contains 1 error"
     other: "The form contains %{count} errors"
@@ -97,6 +104,9 @@ en:
     micropost_form:
       post: "Post"
       placeholder: "Compose new micropost..."
+    stats:
+      folowings: "folwings"
+      followers: "followers"
   controllers:
     user:
       welcom: "Welcome %{name} to the Sample App!"
@@ -108,6 +118,8 @@ en:
       update_success: "Update successfully!"
       user_mail: "Acount %{name} created date: %{date}. Please check your email
                   to activate your account."
+      following: "Following"
+      followers: "Followers"
     session:
       email_pass_bug: "Email/password bug!"
       update_success: "Update successfully!"
@@ -131,6 +143,9 @@ en:
       create_danger: "Not create micropost "
       delete_info: "Micropost of %{name} has deleted!"
       delete_danger: "Bug delete!"
+    relationship:
+      not_found: "id not found!"
+      success: "follow successfully!"
   sessions:
     new:
       title: "Log in"
