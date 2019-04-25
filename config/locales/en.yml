@@ -38,6 +38,11 @@ en:
       link_home: "Home"
       link_help: "Help"
       link_log_in: "Log in"
+      link_acount: "Acount"
+      link_profile: "Profile"
+      link_setting: "Settings"
+      link_logout: "Log out"
+      link_users: "Userss"
     footer:
       small_content_1: "The"
       small_link_1: "https://www.railstutorial.org/"
@@ -66,3 +71,13 @@ en:
     user:
       welcom: "Welcome %{name} to the Sample App!"
       id_not_find: "Id not find!"
+      submit_content: "Create account"
+    session:
+      email_pass_bug: "Email/password bug!"
+  sessions:
+    new:
+      title: "Log in"
+      new_user: "New user?"
+      link_signup: "Sign up now!"
+      email: "Email"
+      password: "Password"
