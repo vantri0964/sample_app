@@ -4,3 +4,5 @@ app:
     email_max_length: 255
     password_min_length: 6
     size_gravatar: 50
+  session:
+    remember_1: "1"
