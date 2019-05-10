@@ -64,6 +64,26 @@ en:
       email: "Email"
       password: "Password"
       password_confirmation: "Confirmation"
+      submit_content: "Create account"
+    edit:
+      title: "Edit user"
+      update_profile: "Upload your profile"
+      email: "Email"
+      name: "Name"
+      password: "Password"
+      password_confirmation: "Confirmation"
+      save_changes: "Save changes"
+    form:
+      email: "Email"
+      name: "Name"
+      password: "Password"
+      password_confirmation: "Confirmation"
+    index:
+      title: "All users"
+    user:
+      delete: "delete"
+      cf: "you sure?"
+      vertical: "|"
   shared:
     one: "The form contains 1 error"
     other: "The form contains %{count} errors"
@@ -72,8 +92,14 @@ en:
       welcom: "Welcome %{name} to the Sample App!"
       id_not_find: "Id not find!"
       submit_content: "Create account"
+      please_log_in: "Please log in!"
+      delete: "User deleted!"
+      delete_bug: "delete bug!"
+      update_success: "Update successfully!"
     session:
       email_pass_bug: "Email/password bug!"
+      update_success: "Update successfully!"
+      please_log_in: "Please log in!"
   sessions:
     new:
       title: "Log in"
@@ -82,5 +108,3 @@ en:
       email: "Email"
       password: "Password"
       rememberme: "Remember me on this computer"
-
-
