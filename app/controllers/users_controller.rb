@@ -17,8 +17,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t "controllers.user.welcom", name: @user.name
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "controllers.user.user_mail", date: @user.created_at,
+                     name: @user.name
+      redirect_to root_path
     else
       render :new
     end
