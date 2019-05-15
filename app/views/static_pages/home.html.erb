@@ -1,13 +1,34 @@
 <% provide :title, t( ".title" ) %>
-<div class="center jumbotron">
-  <h1>
-    <%= t ".title_h1" %>
-  </h1>
-  <h2>
-    <%= t ".content_h2_1" %>
-    <%= link_to t(".link_railsturorial_content"), t(".link_railsturorial") %>
-    <%= t ".content_h2_2" %>
-  </h2>
-  <%= link_to t(".link_sign_up_content"), signup_path, class: "btn btn-lg btn-primary" %>
-</div>
-<%= link_to image_tag( t(".link_img"), alt: t(".link_img_alt") ), t(".link_img_content") %>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3>
+        <%= t ".micropost_feed" %>
+      </h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
+  <div class="center jumbotron">
+    <h1>
+      <%= t ".title_h1" %>
+    </h1>
+    <h2>
+      <%= t ".content_h2_1" %>
+      <%= link_to t(".link_railsturorial_content"), t(".link_railsturorial") %>
+      <%= t ".content_h2_2" %>
+    </h2>
+    <%= link_to t(".link_sign_up_content"),
+                signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+  <%= link_to image_tag( t(".link_img"), alt: t(".link_img_alt") ),
+    t(".link_img_content") %>
+<% end %>

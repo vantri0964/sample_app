@@ -13,7 +13,18 @@ Rails.application.configure do
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
-
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  host = Settings.config.production.host
+  config.action_mailer.default_url_options = {host: host}
+  ActionMailer::Base.smtp_settings = {
+    address: ENV["ADDRESS"],
+    port: Settings.config.production.port,
+    authentication: :plain,
+    user_name: ENV["USER_NAME"],
+    password: ENV["PASSWORD"],
+    enable_starttls_auto: true
+  }
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
   # or in config/master.key. This key is used to decrypt credentials (and other encrypted files).
   # config.require_master_key = true

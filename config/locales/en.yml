@@ -15,6 +15,7 @@ en:
       link_img: "rails.png"
       link_img_alt: "Rails logo"
       link_img_content: "http://rubyonrails.org/"
+      micropost_feed: "Micropost Feed"
     help:
       title: "HELP"
       content: "Trang giao dien Help truy cap tai:"
@@ -84,9 +85,18 @@ en:
       delete: "delete"
       cf: "you sure?"
       vertical: "|"
+    show:
+      micropost: "Microposts"
   shared:
     one: "The form contains 1 error"
     other: "The form contains %{count} errors"
+    user_info:
+      one: "1 micropost"
+      other: "%{count} micropost"
+      view_my _profile: "view my profile"
+    micropost_form:
+      post: "Post"
+      placeholder: "Compose new micropost..."
   controllers:
     user:
       welcom: "Welcome %{name} to the Sample App!"
@@ -101,9 +111,8 @@ en:
     session:
       email_pass_bug: "Email/password bug!"
       update_success: "Update successfully!"
-      please_log_in: "Please log in!"
       delete: "User deleted!"
-      Account_not_activated: "Account not activated
+      account_not_activated: "Account not activated
                               .Check your email for the activation link."
     password_reset:
       email_sent: "Email sent with password reset instructions"
@@ -115,6 +124,13 @@ en:
     account_activation:
       confirm_success: "Account activated!"
       confirm_danger: "Invalid activation link"
+    application:
+      please_log_in: "Please log in!"
+    micropost:
+      create_success: "Create post successfully!"
+      create_danger: "Not create micropost "
+      delete_info: "Micropost of %{name} has deleted!"
+      delete_danger: "Bug delete!"
   sessions:
     new:
       title: "Log in"
@@ -149,6 +165,21 @@ en:
       password_confirmation: "Confirmation"
       submit: "Update password"
   mailers:
-    user_mailer:
-      Account_activation: "Account activation"
-      Password_reset: "Password reset"
+    user:
+      account_activation: "Account activation"
+      password_reset: "Password reset"
+  microposts:
+    micropost:
+      post: "Post"
+      ago: "ago"
+      delete: "delete"
+      you_sure: "You sure?"
+  custom:
+    alert:
+      note: "Maximum file size is 5MB. Please choose a smaller file."
+  helpers:
+    sessions:
+      image_default: "welcom.png"
+  models:
+    micropost:
+      bug_mb: "not less than 5MB"

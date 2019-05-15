@@ -1,11 +1,11 @@
 class UserMailer < ApplicationMailer
   def account_activation user
     @user = user
-    mail to: user.email, subject: t(".Account_activation")
+    mail to: user.email, subject: t("mailers.user.account_activation")
   end
 
   def password_reset user
     @user = user
-    mail to: user.email, subject: t(".Password_reset")
+    mail to: user.email, subject: t("mailers.user.password_reset")
   end
 end

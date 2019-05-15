@@ -49,4 +49,9 @@ module SessionsHelper
   def store_location
     session[:forwarding_url] = request.original_url if request.get?
   end
+
+  def image_default url
+    return url if url.present?
+    t "helpers.sessions.image_default"
+  end
 end

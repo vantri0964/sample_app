@@ -11,8 +11,10 @@ gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "faker", "1.7.3"
 gem "figaro"
+gem "i18n-js"
 gem "jbuilder", "~> 2.5"
 gem "jquery-rails", "~> 4.3"
+gem "mini_magick", "4.7.0"
 gem "minitest", group: :test
 gem "minitest-reporters", group: :test
 gem "puma", "~> 3.11"
@@ -31,6 +33,7 @@ group :development, :test do
 end
 
 group :production do
+  gem "fog", "1.42"
   gem "pg"
 end
 
