@@ -1,11 +1,12 @@
 <%= form_for @micropost do |f| %>
   <%= render "shared/error_messages", object: f.object %>
-  <div class="field">
-    <%= f.text_area :content, placeholder: t(".placeholder") %>
+  <div class="field form-group">
+    <%= f.text_area :content, placeholder: t(".placeholder"),
+      class: "form-control", rows: Settings.shared.micropost_form.rows %>
   </div>
   <%= f.submit t(".post"), class: "btn btn-primary" %>
-  <div class="picture">
-    <%= f.file_field :picture, accept: Settings.views.micropost.except %>
+  <div class="picture form-group">
+    <%= f.file_field :picture, accept: Settings.views.micropost.except,
+      class: "form-control" %>
   </div>
 <% end %>
-
