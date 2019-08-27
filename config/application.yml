@@ -12,8 +12,8 @@
 development:
   ADDRESS: smtp.gmail.com
   USER_NAME: vantri.dev@gmail.com
-  PASSWORD: 0964614592
+  PASSWORD: 
 production:
   ADDRESS: smtp.gmail.com
   USER_NAME: vantri27051998@gmail.com
-  PASSWORD: 01268582141
+  PASSWORD: 
