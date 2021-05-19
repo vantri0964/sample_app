@@ -17,7 +17,7 @@ gem "jquery-rails", "~> 4.3"
 gem "mini_magick", "4.7.0"
 gem "minitest", group: :test
 gem "minitest-reporters", group: :test
-gem "puma", "~> 3.11"
+gem "puma", "~> 4.3"
 gem "rails", "~> 5.2.3"
 gem "rails-controller-testing"
 gem "rails-ujs", "~> 0.1.0"
